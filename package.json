@@ -1,0 +1,61 @@
+{
+  "name": "react-suspense-experiment",
+  "version": "1.0.0",
+  "description": "Experiment with react-suspense",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --config ./webpack.config.babel.js --mode development --open",
+    "build": "NODE_ENV=production webpack --mode production",
+    "bundle-analyzer": "open dist/report.html",
+    "link-green-component": "cd npm-package-green-component && npm i && npm link && cd ../ && npm link npm-package-green-component"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "suspense"
+  ],
+  "author": "Mike Henderyckx",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mhxbe/react-suspense-experiment.git"
+  },
+  "devDependencies": {
+    "@babel/core": "7.5.5",
+    "@babel/plugin-proposal-class-properties": "7.5.5",
+    "@babel/preset-env": "7.5.5",
+    "@babel/preset-react": "7.0.0",
+    "@babel/register": "7.5.5",
+    "babel-eslint": "10.0.2",
+    "babel-loader": "8.0.6",
+    "babel-plugin-styled-components": "1.10.6",
+    "clean-webpack-plugin": "3.0.0",
+    "css-loader": "3.2.0",
+    "eslint": "6.1.0",
+    "eslint-config-prettier": "6.0.0",
+    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-prettier": "3.1.0",
+    "eslint-plugin-react": "7.14.3",
+    "eslint-plugin-react-hooks": "1.7.0",
+    "eslint-plugin-unicorn": "10.0.0",
+    "html-webpack-plugin": "3.2.0",
+    "husky": "3.0.3",
+    "lint-staged": "9.2.1",
+    "prettier": "1.18.2",
+    "react-hot-loader": "4.12.11",
+    "style-loader": "1.0.0",
+    "webpack": "4.39.2",
+    "webpack-bundle-analyzer": "3.4.1",
+    "webpack-cli": "3.3.6",
+    "webpack-dev-server": "3.8.0"
+  },
+  "dependencies": {
+    "prop-types": "15.7.2",
+    "react": "16.9.0",
+    "react-dom": "16.9.0",
+    "react-router-dom": "5.0.1",
+    "sanitize.css": "11.0.0",
+    "styled-components": "4.3.2"
+  }
+}
